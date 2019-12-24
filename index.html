@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+		
+		<title>Enactus MPSTME</title>
+		
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Titillium+Web:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="style.css">
+		
+		<link rel="shortcut icon" type="image/png" href="images/icons/logo.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $(".scroll").click(function(event) {
+    event.preventDefault();
+    $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1000);
+    } );
+  } );
+
+</script>
+<script type="text/javascript">
+	$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+</script>
+
+	</head>
+
+
+	<body class="header-collapse">
+		
+		<div id="site-content">
+			
+			<header class="site-header">
+				<div class="container">
+					<a id="branding" href="index.html">
+						<img src="images/icons/logo.png" alt="Enactus Logo" class="logo">
+						<h1 class="site-title">Enactus<span>MPSTME</span></h1>
+					</a>
+
+					<nav class="main-navigation">
+						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+						<ul class="menu" style="text-shadow: 2px 1px #000000;">
+							<li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item"><a href="about.html">About</a></li>
+							<li class="menu-item"><a class="scroll"href="#content-2">Projects</a></li>
+							<li class="menu-item"><a href="gallery.html">Gallery</a></li>
+							<li class="menu-item"><a href="contact.php">Contact</a></li>
+						</ul>
+					</nav>
+					<nav class="mobile-navigation"></nav>
+				</div>
+			</header> <!-- .site-header -->
+
+			<main class="main-content">
+				<div class="hero hero-slider">
+					<ul class="slides">
+						<li data-bg-image="images/home_slider/team_slider.png">
+							<div class="container">
+								<h2 class="slide-title">Enactus MPSTME</h2>
+								<p class="slide-desc">A community of students, academic and business professionals that transforms lives sustainably through entrepreneurial action</p>
+								<a href="about.html" class="button">Read more</a>
+								<br><br><br><center><a class="scroll" href="#content-1"><image src="images/icons/icon-scroll-w.png"></a></center>
+							</div>
+						</li>
+						<li data-bg-image="images/home_slider/zeen_slider.png">
+							<div class="container">
+								<h2 class="slide-title">Project Zeen</h2>
+								<p class="slide-desc">An environmentally conscious project, aimed at bridging the urban-rural divide by providing additional knowledge and employment</p>
+								<a href="zeen.html" class="button">Read more</a>
+								<br><br><br><center><a class="scroll" href="#content-1"><image src="images/icons/icon-scroll-w.png"></a></center>
+							</div>
+						</li>
+						<li data-bg-image="images/home_slider/vishuddh_slider.png">
+							<div class="container">
+								<h2 class="slide-title">Project Vishuddh</h2>
+								<p class="slide-desc">A project that aims at providing mechanical, portable washing machines to slum dwellers and helping them form a business out of it</p>
+								<a href="vishuddh.html" class="button">Read more</a>
+								<br><br><br><center><a class="scroll" href="#content-1"><image src="images/icons/icon-scroll-w.png"></a></center>
+							</div>
+						</li>
+					</ul>
+				</div> <!-- .hero-slider -->
+
+				<div class="fullwidth-block">
+					<div class="container">
+						<h2 class="section-title" id="content-1">&nbsp &nbsp Welcome to  Enactus MPSTME</h2>
+						<p class="section-desc">Take a look at the impact we've created with our projects.</p>
+
+						<div class="row">
+							
+							<div class="counter">
+								<img src="images/icons/icon-direct.png" class="counter-icon">
+								<div class="count"><h3 class="counter-num">122</h3></div>
+								<small class="counter-label">people directly impacted</small>
+							</div>
+							
+							
+							<div class="counter">
+								<img src="images/icons/icon-indirect.png" class="counter-icon">
+								<h3 class="counter-num">2560</h3>
+								<small class="counter-label">people indirectly impacted</small>
+							</div>
+							
+							
+							<div class="counter">
+								<img src="images/icons/icon-increase.png" class="counter-icon">
+								<h3 class="counter-num">150%</h3>
+								<small class="counter-label">rise in incomes of beneficiaries</small>
+							</div>
+							
+							
+							<div class="counter last">
+								<img src="images/icons/icon-co2.png" class="counter-icon">
+								<h3 class="counter-num">200</h3>
+								<small class="counter-label">KGs of Carbon Footprint reduced</small>
+							</div>
+							
+						</div>
+					</div> <!-- .container -->
+					<center><a class="scroll" href="#content-2"><image src="images/icons/icon-scroll.png"></a></center>
+				</div> <!-- .fullwidth-block -->
+
+				<div class="fullwidth-block dark-bg" data-bg-color="#1b1b1b">
+					<div class="container">
+						<h2 class="section-title" id="content-2">Our Projects</h2></div>
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="proj">
+									<figure class="proj-image"><a href="zeen.html"><img src="images/projects/logo_zeen.png" alt="Zeen"></a></figure>
+									<h3 class="proj-name">Project Zeen</h3>
+									<small class="proj-desc">active project</small>
+									<div class="proj-social">
+										<a href=" https://www.facebook.com/Enactus-MPSTME-125942421340574/
+"><i class="fa fa-facebook"></i></a>
+										<a href="https://www.instagram.com/enactusmpstme/"><i class="fa fa-instagram"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="proj">
+									<figure class="proj-image"><a href="vishuddh.html"><img src="images/projects/logo_vishuddh.png" alt="Vishuddh"></a></figure>
+									<h3 class="proj-name">Project Vishuddh</h3>
+									<small class="proj-desc">active project</small>
+									<div class="proj-social">
+										<a href=" https://www.facebook.com/Enactus-MPSTME-125942421340574/
+"><i class="fa fa-facebook"></i></a>
+										<a href="https://www.instagram.com/enactusmpstme/"><i class="fa fa-instagram"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="proj">
+									<figure class="proj-image"><a href="patched.html"><img src="images/projects/logo_patched.png" alt="Patched"></a></figure>
+									<h3 class="proj-name">Project Patched</h3>
+									<small class="proj-desc">successfully exited</small>
+									<div class="proj-social">
+										<a href=" https://www.facebook.com/Enactus-MPSTME-125942421340574/
+"><i class="fa fa-facebook"></i></a>
+										<a href="https://www.instagram.com/enactusmpstme/"><i class="fa fa-instagram"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="proj">
+									<figure class="proj-image"><a href="parivartan.html"><img src="images/projects/logo_parivartan.png" alt="Parivartan"></a></figure>
+									<h3 class="proj-name">Project Parivartan</h3>
+									<small class="proj-desc">successfully exited</small>
+									<div class="proj-social">
+										<a href=" https://www.facebook.com/Enactus-MPSTME-125942421340574/
+"><i class="fa fa-facebook"></i></a>
+										<a href="https://www.instagram.com/enactusmpstme/"><i class="fa fa-instagram"></i></a>
+									</div>
+								</div>
+							</div>							
+						</div> <!-- .row -->
+						<center><a class="scroll" href="#content-3"><image src="images/icons/icon-scroll-w.png"></a></center>
+					</div> <!-- .container -->
+				</div> <!-- .fullwidth-block -->
+
+				<div class="fullwidth-block">
+					<div class="container">
+						<h2 class="section-title-w" id="content-3">Our Sponsors</h2>
+						<div class="row">
+						<div class="col-md-3 col-sm-6">
+								<div class="proj">
+									<img src="images/sponsors/spon-bar-big.png" alt="Zeen">
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="proj">
+									<img src="images/sponsors/spon-cap-big.png" alt="Vishuddh">
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="proj">
+									<img src="images/sponsors/spon-jam-big.png" alt="Patched">
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="proj">
+									<img src="images/sponsors/spon-sun-big.png" alt="Parivartan">
+								</div>
+							</div>
+	
+						</div> <!-- .row -->
+						<br><br>
+						<center><a class="scroll" href="#content-4"><image src="images/icons/icon-scroll.png"></a></center><br>
+					</div> <!-- .container -->
+				</div> <!-- .fullwidth-block -->
+
+				<div class="fullwidth-block dark-bg" data-bg-color="#FFC220">
+					<div class="container">
+						<h2 class="section-title" id="content-4">Time-Line</h2>
+						<ul class="news">
+							<li>
+								<div class="entry-date"><span class="date">1</span><span class="month">February</span></div>
+								<div class="entry-summary">Enactus MPSTME celebrated the spirit of Social Entrepreneurship with the ones of our projects on the evening of 1st February. It was brought to life by some Spoken Words woven to beauty and perfection.</div>
+							</li>
+							<li>
+								<div class="entry-date"><span class="date">24</span><span class="month">January</span></div>
+								<div class="entry-summary">We set up a kiosk and successfully sold our detergent - Vidhra to Happy and Satisfied customers.</div>
+							</li>
+							<li>
+								<div class="entry-date"><span class="date">21</span><span class="month">January</span></div>
+								<div class="entry-summary">Enactus MPSTME collaborated with the Robinhood Army for the Volunteering Week, where we conducted a food and book donation drive in 6 different locations of Mumbai.</div>
+							</li>
+						</ul>
+						<div class="text-center">
+							<a href="timeline.html" class="button invert">Show more news</a>
+						</div>
+						<br><center><a class="scroll" href="#content-5"><image src="images/icons/icon-scroll.png"></a></center>
+					</div>
+				</div>
+
+			</main> <!-- .main-content -->
+
+			<footer class="site-footer" id="content-5">
+				<div class="container">
+				<a class="scroll" href="#site-content"><img src="images/icons/enactus-logo-big.png"></a>
+					<div class="subscribe-form">
+					<form action="contact.html">
+							<input type="text" placeholder="Write to us at: MPSTME, NMIMS University V.L.Mehta Road, JVPD, Opp Cooper Hospital, Vile Parle West Mumbai, Maharashtra 400056">
+							<button type="submit"><img src="images/icons/icon-envelope-white.png" alt=""></button>
+						</form></div>
+					<!--<h1>Address:</h1><h3> MPSTME, NMIMS University V.L.Mehta Road, JVPD,<br>&nbsp&nbsp&nbsp&nbsp Opp Cooper Hospital, Vile Parle West Mumbai, <br>Maharashtra 400056</h3>-->
+						<a href="tel:+919967533307"><h2>+919967533307</h2></a>
+						<a href="mailto:enactus.nmims@gmail.com"><h2>enactus.nmims@gmail.com</h2></a>
+
+				
+					<div class="copy">
+					<div class="social-links">
+						<a href=" https://www.facebook.com/Enactus-MPSTME-125942421340574/"><i class="fa fa-facebook"></i></a>
+						&nbsp
+						<a href="https://www.instagram.com/enactusmpstme/"><i class="fa fa-instagram"></i></a>
+					<br><br>
+						<p>Copyright 2018 Enactus MPSTME. Designed by Akshar Sharma. All rights reserved.</p>
+					</div>
+				</div>
+			</footer> <!-- .site-footer -->
+
+		</div> <!-- #site-content -->
+
+		
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		
+	</body>
+
+</html>

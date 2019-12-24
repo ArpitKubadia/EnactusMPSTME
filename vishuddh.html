@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>Enactus MPSTME | Vishuddh</title>
+		
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Titillium+Web:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="style.css">
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+$(document).ready(function(){
+        $(".div1").fadeIn();
+        $(".div1").animate({
+        	left: '20px'
+                    },"slow");
+        $("#img-anim").animate({
+        	right: '50px'
+        },"slow")
+        $("#div2").fadeIn("3000");
+        $("#div3").fadeIn(3000);
+});
+</script>
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $(".scroll").click(function(event) {
+    event.preventDefault();
+    $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1000);
+    } );
+  } );
+</script>
+
+	</head>
+
+
+	<body>
+		
+		<div id="site-content">
+			
+			<header class="site-header">
+				<div class="container">
+					<a id="branding" href="index.html">
+						<img src="images/icons/logo.png" alt="Enactus Logo" class="logo">
+						<h1 class="site-title">Enactus<span>MPSTME</span></h1>
+					</a>
+
+					<nav class="main-navigation">
+						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item"><a href="about.html">About</a></li>
+							<li class="menu-item"><a href="index.html#content-2">Projects</a></li>
+							<li class="menu-item"><a href="gallery.html">Gallery</a></li>
+							<li class="menu-item"><a href="contact.php">Contact</a></li>
+						</ul>
+					</nav>
+					<nav class="mobile-navigation"></nav>
+				</div>
+			</header> <!-- .site-header -->
+			<main class="main-content">
+				
+		<div class="fullwidth-block content">
+
+					<div class="container">
+					<img src="images/projects/logo-vishuddh-small.png" id="div1" style=" margin-left: -26px;position: relative;" align="right">
+						<div class="div1" style="display:none; margin-left: -100px;position: relative;"><h1 class="section-title-p">Project Vishuddh</h1></div>
+						
+						<div id="div2" style="display: none;"><h2 class="entry-title"><b>Project Vishuddh</b> aims at providing mechanical, portable washing machines to <b>slum dwellers</b> and helping them form a business out of it</h2></div>
+						<center><a class="scroll" href="#content-1"><image src="images/icons/icon-scroll.png"></a></center>
+						<figure class="block">
+						<!--Slider Begins-->
+												
+						    <script src="js/jssor.slider-26.7.0.min.js" type="text/javascript"></script>
+						    <script type="text/javascript">
+						        jssor_1_slider_init = function() {
+
+						            var jssor_1_SlideshowTransitions = [
+						              {$Duration:800,$Opacity:2}
+						            ];
+
+						            var jssor_1_options = {
+						              $AutoPlay: 1,
+						              $Cols: 1,
+						              $Align: 0,
+						              $SlideshowOptions: {
+						                $Class: $JssorSlideshowRunner$,
+						                $Transitions: jssor_1_SlideshowTransitions,
+						                $TransitionsOrder: 1
+						              },
+						              $ArrowNavigatorOptions: {
+						                $Class: $JssorArrowNavigator$
+						              },
+						              $BulletNavigatorOptions: {
+						                $Class: $JssorBulletNavigator$
+						              }
+						            };
+
+						            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+						            /*#region responsive code begin*/
+
+						            var MAX_WIDTH = 980;
+
+						            function ScaleSlider() {
+						                var containerElement = jssor_1_slider.$Elmt.parentNode;
+						                var containerWidth = containerElement.clientWidth;
+
+						                if (containerWidth) {
+
+						                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+						                    jssor_1_slider.$ScaleWidth(expectedWidth);
+						                }
+						                else {
+						                    window.setTimeout(ScaleSlider, 30);
+						                }
+						            }
+
+						            ScaleSlider();
+
+						            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+						            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+						            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+						            /*#endregion responsive code end*/
+						        };
+						    </script>
+						    <style>
+						        /* jssor slider loading skin spin css */
+						        .jssorl-009-spin img {
+						            animation-name: jssorl-009-spin;
+						            animation-duration: 1.6s;
+						            animation-iteration-count: infinite;
+						            animation-timing-function: linear;
+						        }
+
+						        @keyframes jssorl-009-spin {
+						            from {
+						                transform: rotate(0deg);
+						            }
+
+						            to {
+						                transform: rotate(360deg);
+						            }
+						        }
+
+
+						        .jssorb051 .i {position:absolute;cursor:pointer;}
+						        .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
+						        .jssorb051 .i:hover .b {fill-opacity:.7;}
+						        .jssorb051 .iav .b {fill-opacity: 1;}
+						        .jssorb051 .i.idn {opacity:.3;}
+
+						        .jssora051 {display:block;position:absolute;cursor:pointer;}
+						        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+						        .jssora051:hover {opacity:.8;}
+						        .jssora051.jssora051dn {opacity:.5;}
+						        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+						    </style>
+						    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+						        <!-- Loading Screen -->
+						        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+						            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="images/icons/spin.svg" />
+						        </div>
+						        <div id="content-1"></div>
+						        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+						        	
+						            <div data-p="170.00">
+						                <img data-u="image" src="images/proj_slider/vis-1.jpg" />
+						            </div>
+						            <div data-p="170.00">
+						                <img data-u="image" src="images/proj_slider/vis-3.jpg" />
+						            </div>
+						            <div data-p="170.00">
+						                <img data-u="image" src="images/proj_slider/vis-7.jpg" />
+						            </div>
+						            <div data-p="170.00">
+						                <img data-u="image" src="images/proj_slider/vis-9.jpg" />
+						            </div>
+						            <div data-p="170.00">
+						                <img data-u="image" src="images/proj_slider/vis-12.jpg" />
+						            </div>
+						        </div>
+						        <!-- Bullet Navigator -->
+						        <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+						            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+						                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+						                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+						                </svg>
+						            </div>
+						        </div>
+						        <!-- Arrow Navigator -->
+						        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+						            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+						                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+						            </svg>
+						        </div>
+						        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+						            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+						                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+						            </svg>
+						        </div>
+						    </div>
+
+						    <script type="text/javascript">jssor_1_slider_init();</script>
+							<!-- #endregion Jssor Slider End -->
+
+						</figure>
+						
+						<p>The main aim of Vishuddh is to educate the community about the use of washing machines and then move towards the concept of community washing centres. The machines uses easy to obtain raw materials and require minimal technical
+						knowledge for operation and construction. Other than that, we also aim to eradicate poverty, promote good health and well-being, promote gender equality, work for clean water and sanitation, promote responsible consumption and production, and lastly, protect life below water. Owning basic home appliances is a far-fetched dream for them, owing to issues of cost, space and
+electricity. Hence, at Project Vishuddh we give them technical solutions to solve these problems.
+						</p>
+						<center><a class="scroll" href="#div3"><image src="images/icons/icon-scroll.png"></a></center>	
+						</div>
+						</div>
+						
+ 		<div class="fullwidth-block dark-bg" data-bg-color="#1b1b1b">
+					<div class="container"><div id="div3"></div>
+						<h2 class="section-title">Why we do?</h2>
+						<ul><div class="con-li">
+								<li>
+									Poor sanitation and hygiene, water shortage, lack of space and pollution.
+								</li><br>
+								<li>A city with about 50% of the population residing in slums, the challenges are plenty. Pollution is choking
+Mumbai to a silent death, denying access to basic necessities like portable water.</li><br>
+								<li>At Project Vishuddh we resolve these issues by redefining laundry.</li><br>
+								<li>An easy to manufacture and use machine sets out Project Vishuddh on its venture to eradicate poverty
+and achieve gender equality. Along with that, we also have a cheap and efficient detergent.</li>
+								
+							</ul><br><br>
+							<center><a class="scroll" href="#div5"><image src="images/icons/icon-scroll-w.png"></a></center>	
+						
+						</div>
+						</div>
+						</div>
+
+			<div class="fullwidth-block dark-bg" data-bg-color="#FFC220">
+					<div class="container" id="div5">
+					<h2 class="section-title-w">How we do?</h2>
+								<div class="fulllwidth-block content"><h2 class="entry-title">With our motto- <b>Laundry Revolutionized</b>, we first educate the slum community about the use and
+benefits of our mechanical washing machine and organic detergent. We then help them manufacture it
+and then sell it.</h2>
+</div>
+<center><a class="scroll" href="#content-5"><image src="images/icons/icon-scroll.png"></a></center>	
+
+						</div>
+						</div>
+						</div>
+				
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		</main>
+			
+			<footer class="site-footer" id="content-5">
+				<div class="container">
+				<a class="scroll" href="#site-content"><img src="images/icons/enactus-logo-big.png"></a>
+					<div class="subscribe-form">
+					<form action="contact.html">
+							<input type="text" placeholder="Write to us at: MPSTME, NMIMS University V.L.Mehta Road, JVPD, Opp Cooper Hospital, Vile Parle West Mumbai, Maharashtra 400056">
+							<button type="submit"><img src="images/icons/icon-envelope-white.png" alt=""></button>
+						</form></div>
+					<!--<h1>Address:</h1><h3> MPSTME, NMIMS University V.L.Mehta Road, JVPD,<br>&nbsp&nbsp&nbsp&nbsp Opp Cooper Hospital, Vile Parle West Mumbai, <br>Maharashtra 400056</h3>-->
+						<a href="tel:+919967533307"><h2>+919967533307</h2></a>
+						<a href="mailto:enactus.nmims@gmail.com"><h2>enactus.nmims@gmail.com</h2></a>
+
+				
+					<div class="copy">
+					<div class="social-links">
+						<a href="https://www.facebook.com/Enactus-MPSTME-125942421340574/"><i class="fa fa-facebook"></i></a>
+						&nbsp
+						<a href="https://www.instagram.com/enactusmpstme/"><i class="fa fa-instagram"></i></a>
+					<br><br>
+						<p>Copyright 2018 Enactus MPSTME. Designed by Akshar Sharma. All rights reserved.</p>
+					</div>
+				</div>
+			</footer> <!-- .site-footer -->
+
+		</div> <!-- #site-content -->
+
+						</body>
+						</html>

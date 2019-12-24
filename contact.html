@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>Enactus MPSTME | Contact</title>
+		
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Titillium+Web:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" type="image/png" href="images/icons/logo.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $(".scroll").click(function(event) {
+    event.preventDefault();
+    $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 1000);
+    } );
+  } );
+  </script>
+	</head>
+
+
+	<body>
+		
+		<div id="site-content">
+			
+			<header class="site-header">
+				<div class="container">
+					<a id="branding" href="index.html">
+						<img src="images/icons/logo.png" alt="Enactus Logo" class="logo">
+						<h1 class="site-title">Enactus<span>MPSTME</span></h1>
+					</a>
+
+					<nav class="main-navigation">
+						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item"><a href="about.html">About</a></li>
+							<li class="menu-item"><a href="index.html#content-2">Projects</a></li>
+							<li class="menu-item"><a href="gallery.html">Gallery</a></li>
+							<li class="menu-item current-menu-item"><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+					<nav class="mobile-navigation"></nav>
+				</div>
+			</header> <!-- .site-header -->
+
+			<main class="main-content">
+				
+				<div class="fullwidth-block content">
+					<div class="container">
+						<h2 class="entry-title">You can write to us by filling the form below, or use the contact details provided : </h2>
+
+						<div class="row">
+							<div class="col-md-5">
+								<form method="post" class="contact-form" action="https://formspree.io/aksharsharma13@gmail.com">
+									<input type="text" id="name" placeholder="Name...">
+									<input type="email" id="email" placeholder="Email...">
+									<input type="tel" id="number" placeholder="Contact Number...">
+									<input type="text" id="website" placeholder="website...">
+									<textarea name="" id="message" placeholder="Message..."></textarea>
+									<div class="text-right">
+										<input type="submit" value="Send message">
+									</div>
+								</form>
+							</div>
+							<div class="col-md-6 col-md-offset-1">
+								<div class="map-container">
+									<div id="map"></div>
+											<script type="text/javascript">
+												function initMap() {
+													  var myLatLng = {lat: 19.109924, lng: 72.837540};
+
+													  var map = new google.maps.Map(document.getElementById('map'), {
+													    zoom: 17,
+													    center: myLatLng
+													  });
+
+													  var marker = new google.maps.Marker({
+													    position: myLatLng,
+													    map: map,
+													    title: 'Enactus MPSTME'
+													  });
+												}
+											</script>
+									<address>
+										<strong>Enactus MPSTME</strong>
+										<a href="mailto:enactus.nmims@gmail.com">enactus.nmims@gmail.com</a> <br>
+										<span>NMIMS MPSTME, opp. Cooper Hospital, Vile Parle(W),Mumbai-400056</span>
+										<a href="tel:+919967533307">+919967533307</a>
+									</address>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</main> <!-- .main-content -->
+
+			
+			<footer class="site-footer" id="content-5">
+				<div class="container">
+				<a class="scroll" href="#site-content"><img src="images/icons/enactus-logo-big.png"></a>
+					<div class="subscribe-form">
+					<form action="contact.html">
+							<input type="text" placeholder="Write to us at: MPSTME, NMIMS University V.L.Mehta Road, JVPD, Opp Cooper Hospital, Vile Parle West Mumbai, Maharashtra 400056">
+							<button type="submit"><img src="images/icons/icon-envelope-white.png" alt=""></button>
+						</form></div>
+					<!--<h1>Address:</h1><h3> MPSTME, NMIMS University V.L.Mehta Road, JVPD,<br>&nbsp&nbsp&nbsp&nbsp Opp Cooper Hospital, Vile Parle West Mumbai, <br>Maharashtra 400056</h3>-->
+						<a href="tel:+919967533307"><h2>+919967533307</h2></a>
+						<a href="mailto:enactus.nmims@gmail.com"><h2>enactus.nmims@gmail.com</h2></a>
+
+				
+					<div class="copy">
+					<div class="social-links">
+						<a href="https://www.facebook.com/Enactus-MPSTME-125942421340574/"><i class="fa fa-facebook"></i></a>
+						&nbsp
+						<a href="https://www.instagram.com/enactusmpstme/"><i class="fa fa-instagram"></i></a>
+					<br><br>
+						<p>Copyright 2018 Enactus MPSTME. Designed by Akshar Sharma. All rights reserved.</p>
+					</div>
+				</div>
+			</footer> <!-- .site-footer --> 
+
+		</div> <!-- #site-content -->
+
+		
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+
+		<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChwEejxNawFEVaClVgUpI-Ze7KR_8vXyI&callback=initMap">
+</script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		
+	</body>
+
+</html>
